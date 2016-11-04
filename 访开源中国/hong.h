@@ -13,6 +13,9 @@
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define RGB(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
 
+#define USER_INFO @"userInfo"
+#define UPDATE_USER_INFO @"updateUserInfo"
+
 extern AFURLSessionManager * defaultAPPSessionManager();
 
 #endif /* hong_h */

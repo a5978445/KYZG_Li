@@ -68,6 +68,17 @@
     return self;
 }
 
+- (BOOL)updateTitles:(NSArray<NSDictionary *> *)titles {
+    if (titles.count != _buttons.count) {
+        return false;
+    }
+    for (int i = 0; i < titles.count; i ++) {
+        UIButton *button = _buttons[i];
+        [button setAttributedTitle:[self getAttributedStringWithTitleDic:titles[i]] forState:UIControlStateNormal];
+    }
+    return YES;
+}
+
 - (NSAttributedString *)getAttributedStringWithTitleDic:(NSDictionary *)titleDic {
     //NSString *title = titleDic[@"title"];
     //NSString *subTitle = titleDic[@"subTitle"];

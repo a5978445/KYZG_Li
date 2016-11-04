@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141F6ACF1DCB3B6E0022FC33 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141F6ACE1DCB3B6E0022FC33 /* SettingViewController.m */; };
+		142039B31DCC20AF001FEE58 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142039B21DCC20AF001FEE58 /* NewsViewController.m */; };
+		142039B61DCC27E1001FEE58 /* BannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 142039B51DCC27E1001FEE58 /* BannerScrollView.m */; };
 		1428088D1DC2074800214187 /* UserInfoButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1428088C1DC2074800214187 /* UserInfoButtons.m */; };
 		142808D81DC2E85700214187 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 142808D71DC2E85700214187 /* libxml2.2.dylib */; };
 		142808DB1DC2E8AF00214187 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 142808DA1DC2E8AF00214187 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -16,6 +19,7 @@
 		142AD4011DC09ED000FFFCE7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142AD3FF1DC09ED000FFFCE7 /* LoginViewController.m */; };
 		142AD4021DC09ED000FFFCE7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142AD4001DC09ED000FFFCE7 /* LoginViewController.xib */; };
 		142AD4051DC0A77800FFFCE7 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142AD4041DC0A77800FFFCE7 /* RootNavigationController.m */; };
+		142BBE8A1DC9848300C2D2AD /* SingleImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BBE891DC9848300C2D2AD /* SingleImageViewController.m */; };
 		14309EDA1DBF76640062888F /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14309ED91DBF76640062888F /* PlaceholderTextView.m */; };
 		14309EDD1DBF77490062888F /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 14309EDC1DBF77490062888F /* UIColor+Util.m */; };
 		14309EE01DBF869C0062888F /* MyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14309EDF1DBF869C0062888F /* MyHeaderView.m */; };
@@ -38,6 +42,7 @@
 		1439A24D1DBE236800D9F7B9 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1439A24C1DBE236800D9F7B9 /* MyViewController.m */; };
 		1439A2501DBE23AD00D9F7B9 /* RootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1439A24F1DBE23AD00D9F7B9 /* RootTabBarViewController.m */; };
 		14B8A3491DC3466A007C2459 /* hong.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B8A3481DC3466A007C2459 /* hong.m */; };
+		14ED915D1DC89015008BC47E /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ED915C1DC89015008BC47E /* Utils.m */; };
 		E449F875A7EF8A405D345B21 /* libPods-访开源中国.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A864DA737E895685BAB976E1 /* libPods-访开源中国.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +64,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141F6ACD1DCB3B6E0022FC33 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		141F6ACE1DCB3B6E0022FC33 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		142039B11DCC20AF001FEE58 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		142039B21DCC20AF001FEE58 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		142039B41DCC27E1001FEE58 /* BannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerScrollView.h; sourceTree = "<group>"; };
+		142039B51DCC27E1001FEE58 /* BannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerScrollView.m; sourceTree = "<group>"; };
 		1428088A1DC19C3E00214187 /* hong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hong.h; sourceTree = "<group>"; };
 		1428088B1DC2074800214187 /* UserInfoButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoButtons.h; sourceTree = "<group>"; };
 		1428088C1DC2074800214187 /* UserInfoButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoButtons.m; sourceTree = "<group>"; };
@@ -77,6 +88,8 @@
 		142AD4001DC09ED000FFFCE7 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		142AD4031DC0A77800FFFCE7 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		142AD4041DC0A77800FFFCE7 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		142BBE881DC9848300C2D2AD /* SingleImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageViewController.h; sourceTree = "<group>"; };
+		142BBE891DC9848300C2D2AD /* SingleImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageViewController.m; sourceTree = "<group>"; };
 		14309ED81DBF76640062888F /* PlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextView.h; sourceTree = "<group>"; };
 		14309ED91DBF76640062888F /* PlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextView.m; sourceTree = "<group>"; };
 		14309EDB1DBF77490062888F /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
@@ -121,6 +134,8 @@
 		1439A24F1DBE23AD00D9F7B9 /* RootTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarViewController.m; sourceTree = "<group>"; };
 		1439A2591DBE348700D9F7B9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		14B8A3481DC3466A007C2459 /* hong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hong.m; sourceTree = "<group>"; };
+		14ED915B1DC89015008BC47E /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		14ED915C1DC89015008BC47E /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		27F09982437B9A13FEAA8365 /* Pods-访开源中国.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-访开源中国.debug.xcconfig"; path = "Pods/Target Support Files/Pods-访开源中国/Pods-访开源中国.debug.xcconfig"; sourceTree = "<group>"; };
 		A864DA737E895685BAB976E1 /* libPods-访开源中国.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-访开源中国.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1971139C0E010C1F4BAFA5 /* Pods-访开源中国.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-访开源中国.release.xcconfig"; path = "Pods/Target Support Files/Pods-访开源中国/Pods-访开源中国.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +168,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142039AE1DCC1F7A001FEE58 /* MyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1439A24B1DBE236800D9F7B9 /* MyViewController.h */,
+				1439A24C1DBE236800D9F7B9 /* MyViewController.m */,
+				14309EDE1DBF869C0062888F /* MyHeaderView.h */,
+				14309EDF1DBF869C0062888F /* MyHeaderView.m */,
+				1437E4491DC6E46300D57F94 /* CombinationHeadView.h */,
+				1437E44A1DC6E46300D57F94 /* CombinationHeadView.m */,
+				1428088B1DC2074800214187 /* UserInfoButtons.h */,
+				1428088C1DC2074800214187 /* UserInfoButtons.m */,
+				142AD3EE1DC04DE200FFFCE7 /* QuartzCanvasView.h */,
+				142AD3EF1DC04DE200FFFCE7 /* QuartzCanvasView.m */,
+			);
+			name = MyViewController;
+			sourceTree = "<group>";
+		};
+		142039AF1DCC1FB3001FEE58 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				142808D41DC2E09300214187 /* OSCAPI.h */,
+				1428088A1DC19C3E00214187 /* hong.h */,
+				14B8A3481DC3466A007C2459 /* hong.m */,
+				14ED915B1DC89015008BC47E /* Utils.h */,
+				14ED915C1DC89015008BC47E /* Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		142039B01DCC1FCC001FEE58 /* ImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				142BBE881DC9848300C2D2AD /* SingleImageViewController.h */,
+				142BBE891DC9848300C2D2AD /* SingleImageViewController.m */,
+			);
+			name = ImageViewController;
+			sourceTree = "<group>";
+		};
 		142AD4061DC0CC4F00FFFCE7 /* 分类 */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,9 +274,10 @@
 		1439A2091DBE185300D9F7B9 /* 访开源中国 */ = {
 			isa = PBXGroup;
 			children = (
+				142039B01DCC1FCC001FEE58 /* ImageViewController */,
+				142039AF1DCC1FB3001FEE58 /* Utils */,
 				1437E44D1DC743B100D57F94 /* XMLParsing */,
 				1437E44C1DC743A000D57F94 /* userInfo */,
-				142808D41DC2E09300214187 /* OSCAPI.h */,
 				142AD4071DC0CC7100FFFCE7 /* login */,
 				142AD4061DC0CC4F00FFFCE7 /* 分类 */,
 				1439A2581DBE241A00D9F7B9 /* 我的 */,
@@ -239,8 +293,10 @@
 				1439A2181DBE185400D9F7B9 /* LaunchScreen.storyboard */,
 				1439A21B1DBE185400D9F7B9 /* Info.plist */,
 				1439A20A1DBE185300D9F7B9 /* Supporting Files */,
-				1428088A1DC19C3E00214187 /* hong.h */,
-				14B8A3481DC3466A007C2459 /* hong.m */,
+				142039B11DCC20AF001FEE58 /* NewsViewController.h */,
+				142039B21DCC20AF001FEE58 /* NewsViewController.m */,
+				142039B41DCC27E1001FEE58 /* BannerScrollView.h */,
+				142039B51DCC27E1001FEE58 /* BannerScrollView.m */,
 			);
 			path = "访开源中国";
 			sourceTree = "<group>";
@@ -326,18 +382,11 @@
 		1439A2581DBE241A00D9F7B9 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
-				1439A24B1DBE236800D9F7B9 /* MyViewController.h */,
-				1439A24C1DBE236800D9F7B9 /* MyViewController.m */,
-				14309EDE1DBF869C0062888F /* MyHeaderView.h */,
-				14309EDF1DBF869C0062888F /* MyHeaderView.m */,
-				1437E4491DC6E46300D57F94 /* CombinationHeadView.h */,
-				1437E44A1DC6E46300D57F94 /* CombinationHeadView.m */,
+				142039AE1DCC1F7A001FEE58 /* MyViewController */,
 				14309EE11DBF890C0062888F /* TableViewDataModel.h */,
 				14309EE21DBF890C0062888F /* TableViewDataModel.m */,
-				1428088B1DC2074800214187 /* UserInfoButtons.h */,
-				1428088C1DC2074800214187 /* UserInfoButtons.m */,
-				142AD3EE1DC04DE200FFFCE7 /* QuartzCanvasView.h */,
-				142AD3EF1DC04DE200FFFCE7 /* QuartzCanvasView.m */,
+				141F6ACD1DCB3B6E0022FC33 /* SettingViewController.h */,
+				141F6ACE1DCB3B6E0022FC33 /* SettingViewController.m */,
 			);
 			name = "我的";
 			sourceTree = "<group>";
@@ -551,6 +600,7 @@
 				1437E44B1DC6E46300D57F94 /* CombinationHeadView.m in Sources */,
 				1439A2411DBE22D600D9F7B9 /* Comprehensive ViewController.m in Sources */,
 				14B8A3491DC3466A007C2459 /* hong.m in Sources */,
+				141F6ACF1DCB3B6E0022FC33 /* SettingViewController.m in Sources */,
 				1437E4451DC6DBFA00D57F94 /* OSCUser.m in Sources */,
 				14309EE31DBF890C0062888F /* TableViewDataModel.m in Sources */,
 				142AD4051DC0A77800FFFCE7 /* RootNavigationController.m in Sources */,
@@ -561,10 +611,13 @@
 				14309EE61DBF902C0062888F /* TransverseButtonsView.m in Sources */,
 				142AD3F31DC04E1000FFFCE7 /* UIDevice+SystemInfo.m in Sources */,
 				1428088D1DC2074800214187 /* UserInfoButtons.m in Sources */,
+				14ED915D1DC89015008BC47E /* Utils.m in Sources */,
 				1439A24D1DBE236800D9F7B9 /* MyViewController.m in Sources */,
 				1439A20F1DBE185400D9F7B9 /* AppDelegate.m in Sources */,
 				1439A2501DBE23AD00D9F7B9 /* RootTabBarViewController.m in Sources */,
+				142BBE8A1DC9848300C2D2AD /* SingleImageViewController.m in Sources */,
 				142AD4011DC09ED000FFFCE7 /* LoginViewController.m in Sources */,
+				142039B61DCC27E1001FEE58 /* BannerScrollView.m in Sources */,
 				1439A24A1DBE235D00D9F7B9 /* FoundViewController.m in Sources */,
 				14309EE01DBF869C0062888F /* MyHeaderView.m in Sources */,
 				142AD3F01DC04DE200FFFCE7 /* QuartzCanvasView.m in Sources */,
@@ -572,6 +625,7 @@
 				1439A20C1DBE185300D9F7B9 /* main.m in Sources */,
 				14309EDA1DBF76640062888F /* PlaceholderTextView.m in Sources */,
 				14309EDD1DBF77490062888F /* UIColor+Util.m in Sources */,
+				142039B31DCC20AF001FEE58 /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +698,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -691,6 +746,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -731,6 +787,7 @@
 					"\"$(SDKROOT)/usr/include/libxml2\"",
 				);
 				INFOPLIST_FILE = "访开源中国/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liTengFang.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -754,6 +811,7 @@
 					"\"$(SDKROOT)/usr/include/libxml2\"",
 				);
 				INFOPLIST_FILE = "访开源中国/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liTengFang.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";

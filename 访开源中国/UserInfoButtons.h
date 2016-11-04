@@ -18,4 +18,5 @@
 
 //- (instancetype)initWithFrame:(CGRect)frame title:(NSArray<NSString *>*)titles;
 - (instancetype)initWithFrame:(CGRect)frame titleDic:(NSArray<NSDictionary *>*)titles;
+- (BOOL)updateTitles:(NSArray<NSDictionary *>*)titles;
 @end

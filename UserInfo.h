@@ -12,6 +12,8 @@
 
 +(UserInfo *)myUserInfo;
 
-@property(retain,nonatomic) OSCUser *user;
+//@property(retain,nonatomic) OSCUser *user;
 
+@property(strong,nonatomic) OSCUser *user;
+- (void)clearUser;
 @end

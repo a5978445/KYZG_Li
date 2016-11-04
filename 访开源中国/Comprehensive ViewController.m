@@ -8,12 +8,17 @@
 
 #import "Comprehensive ViewController.h"
 #import "TransverseButtonsView.h"
+#import "NewsViewController.h"
 @interface Comprehensive_ViewController ()
 
 @end
 
 @implementation Comprehensive_ViewController {
     TransverseButtonsView *_buttonsView;
+    
+    NewsViewController *_newsViewController;
+    UIView *_currentView;
+    UIViewController *_currentCtrl;
 }
 
 - (void)viewDidLoad {
@@ -32,7 +37,29 @@
         make.height.offset(44);
         make.top.offset(64);
     }];
+    
+    _newsViewController = [[NewsViewController alloc]init];
+    _currentView = _newsViewController.view;
+    _currentCtrl = _newsViewController;
+     [self.view addSubview:_currentView];
+    [_currentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.offset(0);
+        make.right.offset(0);
+        make.top.equalTo(_buttonsView.mas_bottom);
+        make.bottom.offset(0);
+    }];
+   
    // _buttonsView.backgroundColor = [UIColor redColor];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [_currentCtrl viewWillAppear:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [_currentCtrl viewWillDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -11,12 +11,13 @@
 @protocol MyHeaderViewDelegate <NSObject>
 
 - (void)login;
-
+- (void)showQRCode;
+- (void)config;
 @end
 
 @interface MyHeaderView : UIView
 
 @property(weak,nonatomic) id<MyHeaderViewDelegate> delegate;
-
+@property(retain,nonatomic) OSCUser *user;
 
 @end

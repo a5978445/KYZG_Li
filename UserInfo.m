@@ -10,14 +10,41 @@
 
 static UserInfo *shareUserInfo;
 
-@implementation UserInfo
+@implementation UserInfo {
+    OSCUser *_user;
+}
 
 + (UserInfo *)myUserInfo {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         shareUserInfo = [[UserInfo alloc]init];
     });
+
     return shareUserInfo;
 }
+
+- (void)setUser:(OSCUser *)user {
+    _user = user;
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:user];
+//    OSCUser *test = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+//    assert([_user isEqual:test]);
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:USER_INFO];
+}
+
+- (OSCUser *)user {
+    if (_user == nil) {
+        NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:USER_INFO];
+        if (data) {
+            _user = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        }
+    }
+    return _user;
+}
+
+- (void)clearUser {
+    _user = nil;
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:USER_INFO];
+}
+
 
 @end

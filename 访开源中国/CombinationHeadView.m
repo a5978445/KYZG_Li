@@ -52,21 +52,24 @@ static const CGFloat buttonsHeight = 64.0f;
     _headView.delegate = delegate;
 }
 
-- (void)setIsLogin:(BOOL)isLogin {
-    _isLogin = isLogin;
-    if (isLogin) {
-        [_buttons mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.offset(buttonsHeight);
-        }];
-    } else {
-        [_buttons mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.height.offset(0);
-        }];
-    }
+
+
+- (void)setUser:(OSCUser *)user {
+    [_buttons mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.offset(user == nil ? 0 : buttonsHeight);
+    }];
+    
+    _user = user;
+    _headView.user = user;
+    
+    [_buttons updateTitles:@[@{kTitle:@"动弹",kSubTitle:[NSString stringWithFormat:@"%d",_user.aStatisticsInfo.tweet]},
+                            @{kTitle:@"收藏",kSubTitle:[NSString stringWithFormat:@"%d",_user.aStatisticsInfo.collect]},
+                            @{kTitle:@"关注",kSubTitle:[NSString stringWithFormat:@"%d",_user.aStatisticsInfo.follow]},
+                             @{kTitle:@"粉丝",kSubTitle:[NSString stringWithFormat:@"%d",_user.aStatisticsInfo.fans]}]];
 }
 
 - (CGFloat)suggestHeight {
-    return _isLogin ? 280 + 64 : 280;
+    return _user ? 280 + 64 : 280;
 }
 
 /*

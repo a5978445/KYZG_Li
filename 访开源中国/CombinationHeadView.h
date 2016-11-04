@@ -10,8 +10,8 @@
 #import "MyHeaderView.h"
 
 @interface CombinationHeadView : UIView
-@property(assign,nonatomic) BOOL isLogin;
 
+@property(retain,nonatomic) OSCUser *user;
 - (void)setDelegate:(id<MyHeaderViewDelegate>)delegate;
 - (CGFloat)suggestHeight;
 @end

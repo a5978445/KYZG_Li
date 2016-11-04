@@ -8,6 +8,7 @@
 
 #import "MyHeaderView.h"
 #import "QuartzCanvasView.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 
 
@@ -50,6 +51,28 @@
     return self;
 }
 
+#pragma mark - public method
+- (void)setUser:(OSCUser *)user {
+    _user = user;
+    if (user == nil) {
+        _headimageView.image = [UIImage imageNamed:@"default-portrait"];
+        _userNameLabel.text = @"点击头像登陆";
+        _userInfoLabel.text = @"该用户还没有填写描述...";
+        _integralLabel.text = @"积分：0";
+    } else {
+        if (_user.portrait != nil) {
+            [_headimageView sd_setImageWithURL:[NSURL URLWithString:_user.portrait]];
+        } else {
+            _headimageView.image = [UIImage imageNamed:@"default-portrait"];
+        }
+        _userNameLabel.text = _user.name;
+        _userInfoLabel.text = _user.desc;
+        _integralLabel.text = [NSString stringWithFormat:@"积分：%d",_user.aStatisticsInfo.score ];
+    }
+}
+
+
+#pragma mark - private method
 - (void)addSubViews {
    
     [self addSetButton];
@@ -76,12 +99,14 @@
 - (void)addSetButton {
     _setUpButton = [[UIButton alloc]init];
     [_setUpButton setImage:[UIImage imageNamed:@"btn_my_setting"] forState:UIControlStateNormal];
+    [_setUpButton addTarget:self action:@selector(setAction:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_setUpButton];
 }
 
 - (void)addCodeButton {
     _codeButton = [[UIButton alloc]init];
     [_codeButton setImage:[UIImage imageNamed:@"btn_qrcode"] forState:UIControlStateNormal];
+    [_codeButton addTarget:self action:@selector(codeAction:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_codeButton];
 }
 
@@ -191,5 +216,13 @@
 - (void)clcikImage:(UITapGestureRecognizer *)gestureRecognizer {
     [_delegate login];
 }
-                                         
+
+- (void)setAction:(UIButton *)button {
+    [_delegate config];
+}
+
+- (void)codeAction:(UIButton *)button {
+    [_delegate showQRCode];
+}
+
 @end
