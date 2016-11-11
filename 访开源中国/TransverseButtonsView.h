@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^TransverseButtonsViewClickBlock)(NSInteger tag);
+
 @interface TransverseButtonsView : UIView
+@property(strong,nonatomic) TransverseButtonsViewClickBlock block;
 
 - (void)setTitles:(NSArray<NSString *> *)titles;
 

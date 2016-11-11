@@ -9,8 +9,8 @@
 #import "Utils.h"
 #import "AppDelegate.h"
 
-//#import "UIFont+FontAwesome.h"
-//#import "NSString+FontAwesome.h"
+#import "UIFont+FontAwesome.h"
+#import "NSString+FontAwesome.h"
 
 #import <MBProgressHUD.h>
 #import <objc/runtime.h>
@@ -110,18 +110,18 @@
 
 #pragma mark 信息处理
 
-//+ (NSAttributedString *)attributedTimeString:(NSDate *)date
-//{
-////    NSString *rawString = [NSString stringWithFormat:@"%@ %@", [NSString fontAwesomeIconStringForEnum:FAClockO], [date timeAgoSinceNow]];
-//    NSString *rawString = [date timeAgoSinceNow];
-//    
-//    NSAttributedString *attributedTime = [[NSAttributedString alloc] initWithString:rawString
-//                                                                         attributes:@{
-//                                                                                      NSFontAttributeName: [UIFont fontAwesomeFontOfSize:12],
-//                                                                                      }];
-//    
-//    return attributedTime;
-//}
++ (NSAttributedString *)attributedTimeString:(NSDate *)date
+{
+//    NSString *rawString = [NSString stringWithFormat:@"%@ %@", [NSString fontAwesomeIconStringForEnum:FAClockO], [date timeAgoSinceNow]];
+    NSString *rawString = [date timeAgoSinceNow];
+    
+    NSAttributedString *attributedTime = [[NSAttributedString alloc] initWithString:rawString
+                                                                         attributes:@{
+                                                                                      NSFontAttributeName: [UIFont fontAwesomeFontOfSize:12],
+                                                                                      }];
+    
+    return attributedTime;
+}
 
 //+ (NSAttributedString *)newTweetAttributedTimeString:(NSDate *)date
 //{
@@ -380,16 +380,16 @@
     return image;
 }
 
-//+ (NSAttributedString *)attributedCommentCount:(int)commentCount
-//{
-//    NSString *rawString = [NSString stringWithFormat:@"%@ %d", [NSString fontAwesomeIconStringForEnum:FACommentsO], commentCount];
-//    NSAttributedString *attributedCommentCount = [[NSAttributedString alloc] initWithString:rawString
-//                                                                                 attributes:@{
-//                                                                                              NSFontAttributeName: [UIFont fontAwesomeFontOfSize:12],
-//                                                                                              }];
-//    
-//    return attributedCommentCount;
-//}
++ (NSAttributedString *)attributedCommentCount:(int)commentCount
+{
+    NSString *rawString = [NSString stringWithFormat:@"%@ %d", [NSString fontAwesomeIconStringForEnum:FACommentsO], commentCount];
+    NSAttributedString *attributedCommentCount = [[NSAttributedString alloc] initWithString:rawString
+                                                                                 attributes:@{
+                                                                                              NSFontAttributeName: [UIFont fontAwesomeFontOfSize:12],
+                                                                                              }];
+    
+    return attributedCommentCount;
+}
 
 
 //+ (NSString *)HTMLWithData:(NSDictionary *)data usingTemplate:(NSString *)templateName

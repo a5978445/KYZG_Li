@@ -17,6 +17,7 @@ PODS:
   - DateTools (1.7.0)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - DateTools (~> 1.7.0)
   - Masonry (~> 1.0.2)
   - MBProgressHUD (~> 1.0.0)
+  - MJExtension (~> 3.0.11)
   - MJRefresh (~> 3.1.12)
   - SDWebImage (~> 3.8.2)
 
@@ -35,9 +37,10 @@ SPEC CHECKSUMS:
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
 
-PODFILE CHECKSUM: c5147bb932eeb7a5fe0ed251f6e0b8295ca1af6e
+PODFILE CHECKSUM: ba337ec1bf0963149655f89ae53e8a15f4cf379a
 
 COCOAPODS: 1.1.0.beta.2

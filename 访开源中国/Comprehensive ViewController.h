@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Comprehensive_ViewController : UIViewController
+@interface ComprehensiveViewController : UIViewController
 
+- (instancetype)initWithTitles:(NSArray<NSString *> *)titles controllers:(NSArray<UIViewController *> *)controllers;
+- (instancetype)init NS_UNAVAILABLE;
 @end

@@ -14,6 +14,11 @@
 #import "Comprehensive ViewController.h"
 #import "RootNavigationController.h"
 
+#import "NewsViewController.h"
+#import "NewBlogsViewController.h"
+#import "QuestionsViewController.h"
+#import "ActivityViewController.h"
+
 @interface RootTabBarViewController ()
 
 @end
@@ -41,7 +46,16 @@
 
 #pragma mark - private method
 - (void)addControllers {
-    Comprehensive_ViewController *p1 = [[Comprehensive_ViewController alloc]init];
+    
+    NewsViewController *newsViewController = [NewsViewController new];
+    NewBlogsViewController *newBlogsViewController = [NewBlogsViewController new];
+    QuestionsViewController *questionsViewController = [QuestionsViewController new];
+    ActivityViewController *activityViewController = [ActivityViewController new];
+    
+    ComprehensiveViewController *p1 = [[ComprehensiveViewController alloc]initWithTitles:@[@"资讯",@"博客",@"问答",@"活动"] controllers:@[newsViewController,newBlogsViewController,questionsViewController,activityViewController]];
+    p1.title = @"综合";
+    
+    
     RootNavigationController *nav1 = [[RootNavigationController alloc]initWithRootViewController:p1];
     MoveViewController *p2 = [[MoveViewController alloc]init];
     RootNavigationController *nav2 = [[RootNavigationController alloc]initWithRootViewController:p2];

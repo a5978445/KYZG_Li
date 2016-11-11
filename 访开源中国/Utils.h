@@ -54,8 +54,8 @@ typedef NS_ENUM(NSUInteger, hudType) {
 + (MBProgressHUD *)showHUDWithText:(NSString *)text;
 + (UIImage *)createQRCodeFromString:(NSString *)string;
 
-//+ (NSAttributedString *)attributedTimeString:(NSDate *)date;
-//+ (NSAttributedString *)attributedCommentCount:(int)commentCount;
++ (NSAttributedString *)attributedTimeString:(NSDate *)date;
++ (NSAttributedString *)attributedCommentCount:(int)commentCount;
 //
 //+ (NSAttributedString *)newTweetAttributedTimeString:(NSDate *)date;
 //

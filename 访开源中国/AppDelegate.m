@@ -18,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self loadCookies];
+    [self setAppearance];
     return YES;
 }
 
@@ -58,6 +59,10 @@
         [cookieStorage setCookie: cookie];
     }
     
+}
+
+- (void)setAppearance {
+    [UITableView appearance].tableFooterView = [UIView new];
 }
 
 @end
