@@ -44,6 +44,7 @@
     
     //  [_tableView.header beginRefreshing];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateUSerInfo) name:UPDATE_USER_INFO object:nil];
+
 }
 
 

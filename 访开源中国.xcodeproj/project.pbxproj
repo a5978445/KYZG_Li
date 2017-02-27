@@ -14,7 +14,6 @@
 		142808D81DC2E85700214187 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 142808D71DC2E85700214187 /* libxml2.2.dylib */; };
 		142808DB1DC2E8AF00214187 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 142808DA1DC2E8AF00214187 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		142808E11DC2ECF700214187 /* ParsingXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 142808E01DC2ECF700214187 /* ParsingXML.m */; };
-		142AD3F01DC04DE200FFFCE7 /* QuartzCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 142AD3EF1DC04DE200FFFCE7 /* QuartzCanvasView.m */; };
 		142AD3F31DC04E1000FFFCE7 /* UIDevice+SystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 142AD3F21DC04E1000FFFCE7 /* UIDevice+SystemInfo.m */; };
 		142AD4011DC09ED000FFFCE7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142AD3FF1DC09ED000FFFCE7 /* LoginViewController.m */; };
 		142AD4021DC09ED000FFFCE7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142AD4001DC09ED000FFFCE7 /* LoginViewController.xib */; };
@@ -49,6 +48,7 @@
 		144698291DD47DAB00804F22 /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144698281DD47DAB00804F22 /* ActivityView.m */; };
 		1446982D1DD485DF00804F22 /* OSCActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1446982B1DD485DF00804F22 /* OSCActivityTableViewCell.m */; };
 		1446982E1DD485DF00804F22 /* OSCActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1446982C1DD485DF00804F22 /* OSCActivityTableViewCell.xib */; };
+		14479D121E63EF8400A6B9E0 /* QuartzCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14479D111E63EF8400A6B9E0 /* QuartzCanvasView.m */; };
 		14AE82551DD1D2EE005D1D1A /* OSCInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE82541DD1D2EE005D1D1A /* OSCInformation.m */; };
 		14AE82591DD1D5B6005D1D1A /* NewsViewControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE82581DD1D5B6005D1D1A /* NewsViewControllerModel.m */; };
 		14AE825C1DD1D679005D1D1A /* OSCBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE825B1DD1D679005D1D1A /* OSCBanner.m */; };
@@ -105,8 +105,6 @@
 		142808DA1DC2E8AF00214187 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = ../GDataXMLNode.m; sourceTree = "<group>"; };
 		142808DF1DC2ECF700214187 /* ParsingXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParsingXML.h; path = ../ParsingXML.h; sourceTree = "<group>"; };
 		142808E01DC2ECF700214187 /* ParsingXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParsingXML.m; path = ../ParsingXML.m; sourceTree = "<group>"; };
-		142AD3EE1DC04DE200FFFCE7 /* QuartzCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCanvasView.h; sourceTree = "<group>"; };
-		142AD3EF1DC04DE200FFFCE7 /* QuartzCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzCanvasView.m; sourceTree = "<group>"; };
 		142AD3F11DC04E1000FFFCE7 /* UIDevice+SystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SystemInfo.h"; sourceTree = "<group>"; };
 		142AD3F21DC04E1000FFFCE7 /* UIDevice+SystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SystemInfo.m"; sourceTree = "<group>"; };
 		142AD3FE1DC09ED000FFFCE7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -174,6 +172,8 @@
 		1446982A1DD485DF00804F22 /* OSCActivityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCActivityTableViewCell.h; sourceTree = "<group>"; };
 		1446982B1DD485DF00804F22 /* OSCActivityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCActivityTableViewCell.m; sourceTree = "<group>"; };
 		1446982C1DD485DF00804F22 /* OSCActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSCActivityTableViewCell.xib; sourceTree = "<group>"; };
+		14479D101E63EF8400A6B9E0 /* QuartzCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCanvasView.h; sourceTree = "<group>"; };
+		14479D111E63EF8400A6B9E0 /* QuartzCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzCanvasView.m; sourceTree = "<group>"; };
 		14AE82531DD1D2EE005D1D1A /* OSCInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCInformation.h; sourceTree = "<group>"; };
 		14AE82541DD1D2EE005D1D1A /* OSCInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCInformation.m; sourceTree = "<group>"; };
 		14AE82561DD1D38B005D1D1A /* enumList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = enumList.h; sourceTree = "<group>"; };
@@ -256,8 +256,8 @@
 				1437E44A1DC6E46300D57F94 /* CombinationHeadView.m */,
 				1428088B1DC2074800214187 /* UserInfoButtons.h */,
 				1428088C1DC2074800214187 /* UserInfoButtons.m */,
-				142AD3EE1DC04DE200FFFCE7 /* QuartzCanvasView.h */,
-				142AD3EF1DC04DE200FFFCE7 /* QuartzCanvasView.m */,
+				14479D101E63EF8400A6B9E0 /* QuartzCanvasView.h */,
+				14479D111E63EF8400A6B9E0 /* QuartzCanvasView.m */,
 			);
 			name = MyViewController;
 			sourceTree = "<group>";
@@ -791,6 +791,7 @@
 				142808DB1DC2E8AF00214187 /* GDataXMLNode.m in Sources */,
 				14EC32F11DD56C1B0064C24D /* QuestionsViewControllerModel.m in Sources */,
 				142808E11DC2ECF700214187 /* ParsingXML.m in Sources */,
+				14479D121E63EF8400A6B9E0 /* QuartzCanvasView.m in Sources */,
 				144698201DD4745D00804F22 /* OSCActivities.m in Sources */,
 				1439A2441DBE230200D9F7B9 /* MoveViewController.m in Sources */,
 				14EC32EE1DD569050064C24D /* OSCQuestion.m in Sources */,
@@ -819,7 +820,6 @@
 				1439A24A1DBE235D00D9F7B9 /* FoundViewController.m in Sources */,
 				14309EE01DBF869C0062888F /* MyHeaderView.m in Sources */,
 				14AE82591DD1D5B6005D1D1A /* NewsViewControllerModel.m in Sources */,
-				142AD3F01DC04DE200FFFCE7 /* QuartzCanvasView.m in Sources */,
 				1439A2471DBE233200D9F7B9 /* PlayViewController.m in Sources */,
 				1439A20C1DBE185300D9F7B9 /* main.m in Sources */,
 				14309EDA1DBF76640062888F /* PlaceholderTextView.m in Sources */,

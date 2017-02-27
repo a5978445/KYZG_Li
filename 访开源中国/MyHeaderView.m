@@ -8,6 +8,7 @@
 
 #import "MyHeaderView.h"
 #import "QuartzCanvasView.h"
+
 #import <SDWebImage/UIImageView+WebCache.h>
 
 
@@ -31,6 +32,7 @@
     
     QuartzCanvasView *_drawView;
     
+  //  TestQuartsView *_drawView;
     
 }
 
@@ -51,6 +53,8 @@
     return self;
 }
 
+
+
 #pragma mark - public method
 - (void)setUser:(OSCUser *)user {
     _user = user;
@@ -69,6 +73,9 @@
         _userInfoLabel.text = _user.desc;
         _integralLabel.text = [NSString stringWithFormat:@"积分：%d",_user.aStatisticsInfo.score ];
     }
+    
+       CGFloat viewHeight = CGRectGetHeight(self.frame);
+       _drawView.offestCenter = (CGPoint){0, view_userPortrait + userPortrait_width * 0.5 - viewHeight * 0.5};
 }
 
 
@@ -158,17 +165,31 @@
 }
 
 - (void)addDrawView {
+//        CGFloat viewHeight = CGRectGetHeight(self.frame);
+//    
+//        _drawView = [[QuartzCanvasView alloc]initWithFrame:(CGRect){{0,0},self.bounds.size}];
+//        _drawView.minimumRoundRadius = userPortrait_width * 0.5 + 30;
+//        _drawView.openRandomness = NO;
+//        _drawView.duration = 25;
+//        _drawView.bgColor = [UIColor colorWithHex:0x24CF5F];
+//        _drawView.strokeColor = [UIColor colorWithHex:0x6FDB94];
+//        _drawView.offestCenter = (OffestCenter){0, view_userPortrait + userPortrait_width * 0.5 - viewHeight * 0.5};
+//        [self addSubview:_drawView];
+//        [self sendSubviewToBack:_drawView];
+    
+   
     CGFloat viewHeight = CGRectGetHeight(self.frame);
     
+
     _drawView = [[QuartzCanvasView alloc]initWithFrame:(CGRect){{0,0},self.bounds.size}];
-    _drawView.minimumRoundRadius = userPortrait_width * 0.5 + 30;
-    _drawView.openRandomness = NO;
-    _drawView.duration = 25;
-    _drawView.bgColor = [UIColor colorWithHex:0x24CF5F];
+        _drawView.minimumRoundRadius = userPortrait_width * 0.5 + 30;
+    _drawView.offestCenter = (CGPoint){0, view_userPortrait + userPortrait_width * 0.5 - viewHeight * 0.5};
+    _drawView.backgroundColor = [UIColor colorWithHex:0x24CF5F];
+
     _drawView.strokeColor = [UIColor colorWithHex:0x6FDB94];
-    _drawView.offestCenter = (OffestCenter){0, view_userPortrait + userPortrait_width * 0.5 - viewHeight * 0.5};
     [self addSubview:_drawView];
     [self sendSubviewToBack:_drawView];
+    
 }
 
 - (void)addLayouts {
